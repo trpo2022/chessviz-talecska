@@ -1,8 +1,19 @@
 #pragma once
 
-void mboard(char mas[9][9]);
-void rboard(char mas[9][9]);
-void BlackPawnMove(int* step_integer, char mas[9][9]);
-void WhitePawnMove(int* step_integer, char mas[9][9]);
-void WhiteTurn(char mas[9][9]);
-void BlackTurn(char mas[9][9]);
+void CreateBoard(char mass[9][9]);
+void PrintBoard(char mass[9][9]);
+int BlackPawnMove(int* step_integer, char mass[9][9]);
+int WhitePawnMove(int* step_integer, char mass[9][9]);
+int WhiteKingMove(int* step_integer, char mass[9][9]);
+int BlackKingMove(int* step_integer, char mass[9][9]);
+int WhiteRookMove(int* step_integer, char mass[9][9]);
+int BlackRookMove(int* step_integer, char mass[9][9]);
+int WhiteBishopMove(int* step_integer, char mass[9][9]);
+int BlackBishopMove(int* step_integer, char mass[9][9]);
+void WhiteQueenMove(int* step_integer, char mass[9][9]);
+void BlackQueenMove(int* step_integer, char mass[9][9]);
+int WhiteHorseMove(int* step_integer, char mass[9][9]);
+int BlackHorseMove(int* step_integer, char mass[9][9]);
+int InputValidation(char* step);
+void WhiteTurn(char mass[9][9]);
+void BlackTurn(char mass[9][9]);

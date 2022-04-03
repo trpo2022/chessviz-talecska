@@ -3,17 +3,17 @@
 #include <stdio.h>
 int main()
 {
-    char mas[9][9];
+    char mass[9][9];
     int MoveNumber = 1;
-    int flag = 1;
-    mboard(mas);
-    rboard(mas);
-    while (flag == 1) {
-        printf("%d. ", MoveNumber);
-        WhiteTurn(mas);
-        BlackTurn(mas);
-        rboard(mas);
+    int j = 1;
+    CreateBoard(mass);
+    PrintBoard(mass);
+    while (j == 1) {
+        printf("%d.", MoveNumber);
+        WhiteTurn(mass);
+        PrintBoard(mass);
+        BlackTurn(mass);
+        PrintBoard(mass);
         MoveNumber += 1;
     }
-    return 0;
 }
